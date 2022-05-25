@@ -1,0 +1,167 @@
+:root {
+    --cinza: #b3b3b3;
+    --azul-botao: #0071eb;
+    --preto-label: #333;
+    --branco: #fff;
+    --cinza-rodape: #757575;
+    --botao-rodape: #000;
+    --form: rgba(0,0,0,.75);
+    --botao-form: #e50914;
+    --cinza-input: rgb(232, 240, 254);
+}
+
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(img/catalogo-netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content:'';
+    background-color: rgb(0, 0, 0, .5);
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+.link__cabecalho {
+    position: relative;
+}
+
+.link__imagem {
+    margin-left: 30px;
+    max-width:200px;
+    max-height:120px;
+    width: auto;
+    height: auto;
+}
+
+main {
+    position: relative;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+.container__form {
+    background: var(--form);
+    border-radius: 4px;
+    width: 25vw; 
+    height: 50vh;
+    padding: 40px;
+}
+
+h1 {
+    color: var(--branco);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input {
+	margin: 0 0 25px;
+	padding: 10px 25px;
+	width: 85%;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--cinza-input);
+}
+
+.lnr-eye {
+    position: absolute;
+    top: 12em;
+    right: 33em;
+    cursor: pointer;
+}
+
+.entrar {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px 25px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background: var(--botao-form);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.check {
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.checkbox {
+    color: var(--cinza);
+}
+
+.click__ajuda {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.click__ajuda:hover {
+    text-decoration: underline;
+}
+
+.container__rodape {
+    position: relative;
+    background-color: var(--form);
+    width: 100vw;
+    height: 45vh;
+    margin-top: 5em;
+}
+
+nav {
+    padding: 1em;
+}
+
+.lista__rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10em;
+    margin-top: 5em;
+}
+
+.lista__link {
+    padding-bottom: 15px;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cinza-rodape);
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.botao__rodape {
+    margin: 2em 13em;
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    background-color: var(--botao-rodape);
+    color: var(--cinza-rodape);
+    border: 1px solid var(--preto-label);
+}

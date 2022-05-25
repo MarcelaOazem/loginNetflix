@@ -1,0 +1,199 @@
+:root {
+    --botao: #e50914;
+    --texto: #fff;
+    --borda: #222;
+    --preto: #333;
+    --cinza: #757575;
+    --cinza-seletor: #aaa;
+    --seletor: #000;
+}
+
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.principal {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(img/catalogo-netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal::before {
+    content:'';
+    background-color: rgb(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.container__logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-right: auto;
+    max-width:150px;
+    max-height:120px;
+    width: auto;
+    height: auto;
+}
+
+.seletor {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 7em;
+    padding: 7px;
+    text-align: center;
+    background-color: rgba(0,0,0,.4);
+    color: var(--texto);
+    border: 1px solid var(--cinza-seletor);
+    border-radius: 2px;
+    opacity: 0.9;
+}
+
+.botao__entrar {
+    margin: 0 50px 0 30px;
+    padding: 8px;
+    width: 5em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--texto);
+    background-color: var(--botao);
+}
+
+.botao, .botao__entrar {
+    cursor: pointer;
+}
+
+.informacoes {
+    position: relative;
+    color: var(--texto);
+    text-align: center;
+    padding: 80px;
+}
+
+.titulo__principal {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.subtitulo {
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+.formulario {
+    align-items: center;
+    display: flex;
+    justify-content:center;
+}
+
+.titulo__secundario {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 450px;
+    height: 50px;
+    padding: 6px;
+    border: none;
+}
+
+.botao {
+    width: 160px;
+    height: 62px;
+    color: var(--texto);
+    background-color: var(--botao);
+    border: none;
+    border-radius: 2px;
+    font-size: 24px;
+}
+
+.container__sessoes {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--seletor);
+    align-items: center;
+    padding: 0 50px;
+}
+
+.img {
+    max-width: 80%;
+    margin-left: 40px;
+}
+
+.container__sessoes, .principal {
+    border-bottom: 8px solid #222;
+}
+
+.container__descricao {
+    color:var(--texto);
+}
+
+.titulo {
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin: 0 40px;
+}
+
+.paragrafo {
+    font-size: 26px;
+    margin: 0 40px;
+}
+
+.container__rodape {
+    height: 60vh;
+    background-color: var(--seletor);
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.container__lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10em;
+    margin-top: 2em;
+}
+
+.lista__rodape {
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.botao__rodape {
+    margin: 3em 0 0 10em;
+    width: 10em;
+    height: 3em;
+    font-size: 16px;
+    text-align: center;
+    background-color:#000;
+    color: var(--cinza);
+    border: 1px solid #333;
+}
+
+.paragrafo__rodape {
+    color: var(--cinza);
+    font-size: 13px;
+    margin: 2em 12em 0;
+}
